@@ -21,9 +21,11 @@
     rel="stylesheet">
 
   <!-- fontawesome -->
- 
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Gallery CSS  -->
   <link rel="stylesheet" href="./css/smartphoto.css">
@@ -33,18 +35,214 @@
   <link rel="stylesheet" href="./css/style.css">
 
 <body>
-  <!---- Trung Hiếu: Header => quality  -->
-  <header>
+
+  <header id="top-header" class="main-header fixed-top ">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
+        <h1>
+          <a class="navbar-brand" href="https://wp.w3layouts.com/farmstead/">
+            Farmstead
+            <i class="fa fa-leaf"></i>
+          </a>
+        </h1>
+        <div class="navbar ml-lg-auto">
+          <!-- search-right -->
+          <div class="search-right ml-lg-3 HeaderSearch">
+            <form action="https://wp.w3layouts.com/farmstead/" method="GET">
+              <input type="search" name="s" placeholder="Search">
+            </form>
+          </div>
+          <!-- toggle switch for light and dark theme -->
+          <div class="cont-ser-position mr-3 DarkandLight">
+            <nav class="navigation">
+              <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                  <input type="checkbox" id="checkbox">
+                  <div class="mode-container">
+                    <i class="gg-sun"></i>
+                    <i class="gg-moon"></i>
+                  </div>
+                </label>
+              </div>
+            </nav>
+          </div>
+          <!-- menu -->
+          <ul id="menu">
+            <li>
+              <input id="check02" type="checkbox" name="menu" />
+              <label for="check02">
+                <span class="fa fa-bars" aria-hidden="true"></span>
+              </label>
+              <ul id="primary-menu" class="submenu">
+                <li class="menu-item active">
+                  <a href="#" aria-current="page">Home</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">About</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">Service</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">Blog Posts</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">Landing Page</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">Elements Page</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">404 Page</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">contact</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   <main>
-    <section class="carousel-section"></section>
-    <section class="features"></section>
+    <section class="carousel-section">
+      <div class="container-fluid">
+        <div class="row d-flex align-items-center">
+          <div class="col-md-5 carousel-left">
+            <div class="carousel-left-content">
+              <h2 class="carousel-title">Farm</h2>
+              <div class="carousel-text">
+                <h3 class="mb-sm-4 mb-2">
+                  Welcome to Farmstead
+                  <br>
+                  where Natural Food is born!
+                </h3>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium.
+                </p>
+                <a href="#" class="btn btn-style mt-sm-5 mt-4">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7 carousel-right p-0 ml-auto">
+            <div class="carousel-slider">
+              <input type="radio" class="cs_anchor radio" name="slider" id="play1" checked />
+              <input type="radio" class="cs_anchor radio" name="slider" id="slide1" />
+              <input type="radio" class="cs_anchor radio" name="slider" id="slide2" />
+              <input type="radio" class="cs_anchor radio" name="slider" id="slide3" />
+              <div class="carousel-images">
+                <div class="img-wrap">
+                  <div class="img-item">
+                    <div class="img-banner img-banner-1">
+                      <div class="img-content d-grid grid-columns-auto">
+                        <h4>
+                          01
+                          <span>/03</span>
+                        </h4>
+                        <p>Agriculture</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="img-item">
+                    <div class="img-banner img-banner-2">
+                      <div class="img-content d-grid grid-columns-auto">
+                        <h4>
+                          02
+                          <span>/03</span>
+                        </h4>
+                        <p>Farm Field </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="img-item">
+                    <div class="img-banner img-banner-3">
+                      <div class="img-content d-grid grid-columns-auto">
+                        <h4>
+                          03
+                          <span>/03</span>
+                        </h4>
+                        <p>Organic Farm</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-lable">
+                <div class="fake-radio">
+                  <label for="slide1" class="radio-btn"></label>
+                  <label for="slide2" class="radio-btn"></label>
+                  <label for="slide3" class="radio-btn"></label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="features py-5" >
+      <div class="container py-md-5 py-4">
+        <div class="row align-items-center">
+          <div class="col-lg-6 feature-left pr-lg-5">
+            <h5 class="small-title">
+              Grow Naturally</h5>
+            <h3 class="title mb-md-3 mb-2">
+              Leaders in the field
+            </h3>
+            <p class="text-para">Aurabitur id gravida risus. Fusce eget ex fermentum, ultricies nisi ac sed, lacinia
+              est. Quisque ut lectus consequat, venenatis eros et, sed commodo risus. Nullam sit
+              amet laoreet elit. Suspendisse non init magnaa velit efficitur, dolor eget ex fermentum. 
+            </p>
+            <a href="about" class="btn btn-style mt-lg-5 mt-4">Discover More</a>
+          </div>
+          <div class="col-lg-6 feature-right mt-lg-0 mt-5">
+            <div class="feature-right-pic d-grid">
+              <div class="f-pic-item">
+                <div class="pic-icon">
+                  <img src="./img/img4.png" alt="" class="img-fluid">
+                </div>
+                <h4>
+                  <a href="#">Natural Products</a>
+                </h4>
+              </div>
+              <div class="f-pic-item">
+                <div class="pic-icon">
+                  <img src="./img/img2.png" alt="" class="img-fluid">
+                </div>
+                <h4>
+                  <a href="#">Wheat Cultivation</a>
+                </h4>
+              </div>
+              <div class="f-pic-item">
+                <div class="pic-icon">
+                  <img src="./img/img1.png" alt="" class="img-fluid">
+                </div>
+                <h4>
+                  <a href="#">Modern Truck</a>
+                </h4>
+              </div>
+              <div class="f-pic-item">
+                <div class="pic-icon">
+                  <img src="./img/img3.png" alt="" class="img-fluid">
+                </div>
+                <h4>
+                  <a href="#">Organic Products</a>
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="services"></section>
     <section class="quality"></section>
 
 
 
-    <!---- Dung: block-list => footer  -->
+
     <section class="block-list py-5">
       <div class="container">
         <div class="row justify-content-center list-wrap">
@@ -154,7 +352,7 @@
                 Our Products
               </h3>
               <p class="mt-2">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo.</p>
-              <a href="#" class="btn btn-primary btn-gallery mt-4">
+              <a href="#" class="btn btn-primary btn-style mt-4">
                 Discover More
               </a>
             </div>
@@ -350,39 +548,39 @@
       <div class="row footer-content">
         <div class="col-lg-4 pl-lg-5 footer-item footer-contact">
           <h3>Find Us</h3>
-          <div >
+          <div>
             <p class="mt-4">
               Address: 10001 Alleghany st, 5th Avenue, 235 Terry, London.
             </p>
             <p class="mt-3">
-              Phone: 
+              Phone:
               <a href="#">+12 23456790</a>
             </p>
             <p class="mt-3">
-              Email: 
+              Email:
               <a href="#">info@example.com</a>
             </p>
             <p class="mt-3">
-              Fax: 
+              Fax:
               <a href="#">+ 11 367 21890</a>
             </p>
           </div>
         </div>
         <div class="col-lg-4 mt-lg-0 mt-5 order-lg-1 order-3 footer-item">
           <h4>
-            <a href="#" class="footer-logo">
+            <a href="#" class="farmstead-logo">
               Farmstead
               <i class="fa fa-leaf"></i>
             </a>
           </h4>
-     
+
           <p class="mt-4">
             Duis imperdiet sapien tortor, vitae congue diam auctor vitae. Aliquam
-              eget turpis ornare, euismod ligul aeget, enenatis dui. 
+            eget turpis ornare, euismod ligul aeget, enenatis dui.
           </p>
           <p class="footer-copy mt-5">
-            © 2023              Farmstead.              All Rights Reserved |
-            WordPress Theme by 
+            © 2023 Farmstead. All Rights Reserved |
+            WordPress Theme by
             <a href="#">W3Layouts.</a>
           </p>
         </div>
@@ -423,23 +621,23 @@
                 <span class="fa-brands fa-github"></span>
               </a>
             </li>
-            
+
           </ul>
         </div>
       </div>
     </div>
     <button onclick="topFunction()" id="movetop">
       <span class="fa fa-level-up" aria-hidden="true"></span>
-  </button>
+    </button>
   </footer>
-  
+
   <!---- Move to top  -->
   <script>
     // When the user scrolls down 20px from the top of the document, show the button
     window.onscroll = function () {
       scrollFunction()
     };
-  
+
     function scrollFunction() {
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         document.getElementById("movetop").style.display = "block";
@@ -447,7 +645,7 @@
         document.getElementById("movetop").style.display = "none";
       }
     }
-  
+
     // When the user clicks on the button, scroll to the top of the document
     function topFunction() {
       document.body.scrollTop = 0;
@@ -467,6 +665,34 @@
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+  <!-- MENU-JS -->
+  <script>
+    $(window).on("scroll", function () {
+      var scroll = $(window).scrollTop();
+
+      if (scroll >= 80) {
+        $("#top-header").addClass("nav-fixed");
+      } else {
+        $("#top-header").removeClass("nav-fixed");
+      }
+    });
+
+    //Main navigation Active Class Add Remove
+    $(".navbar-toggler").on("click", function () {
+      $("header").toggleClass("active");
+    });
+    $(document).on("ready", function () {
+      if ($(window).width() > 991) {
+        $("header").removeClass("active");
+      }
+      $(window).on("resize", function () {
+        if ($(window).width() > 991) {
+          $("header").removeClass("active");
+        }
+      });
+    });
+  </script>
+
   <!-- Gallery js -->
   <script src="./js/smartphoto.js"></script>
   <script>
@@ -477,7 +703,7 @@
       // sm.destroy();
     });
   </script>
-  
+
   <!-- owl carousel -->
   <script src="./js/owl.carousel.js"></script>
   <!-- script for tesimonials carousel slider -->
@@ -505,6 +731,43 @@
         }
       })
     })
+  </script>
+  <!-- theme switch js (light and dark)-->
+  <script src="./js/theme-change.js"></script>
+  <script>
+    function autoType(elementClass, typingSpeed) {
+      var thhis = $(elementClass);
+      thhis.css({
+        "position": "relative",
+        "display": "inline-block"
+      });
+      thhis.prepend('<div class="cursor" style="right: initial; left:0;"></div>');
+      thhis = thhis.find(".text-js");
+      var text = thhis.text().trim().split('');
+      var amntOfChars = text.length;
+      var newString = "";
+      thhis.text("|");
+      setTimeout(function () {
+        thhis.css("opacity", 1);
+        thhis.prev().removeAttr("style");
+        thhis.text("");
+        for (var i = 0; i < amntOfChars; i++) {
+          (function (i, char) {
+            setTimeout(function () {
+              newString += char;
+              thhis.text(newString);
+            }, i * typingSpeed);
+          })(i + 1, text[i]);
+        }
+      }, 1500);
+    }
+
+    $(document).ready(function () {
+      // Now to start autoTyping just call the autoType function with the 
+      // class of outer div
+      // The second paramter is the speed between each letter is typed.   
+      autoType(".type-js", 200);
+    });
   </script>
 
 </body>
